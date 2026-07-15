@@ -54,6 +54,11 @@
   .journey b{color:var(--navy);font-weight:600;}
   .journey .sep{color:var(--accent);font-weight:700;}
 
+  /* Work & writing cards */
+  a.card{display:block;text-decoration:none;transition:all .15s ease;}
+  a.card:hover{border-color:var(--accent);box-shadow:0 3px 10px rgba(18,38,58,.12);transform:translateY(-2px);}
+  a.card .go{color:var(--accent);font-size:.85rem;font-weight:600;}
+
   /* Links */
   .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
   .btn{display:inline-block;padding:10px 22px;border-radius:8px;text-decoration:none;font-size:.93rem;font-weight:600;border:1.5px solid var(--navy-2);color:var(--navy-2);transition:all .15s ease;}
@@ -159,6 +164,27 @@
       Electronics engineer by training (University of Pune, 1997) &middot; MBA, Questrom School of
       Business, Boston University (2023) &middot; continuous learner across ITIL, cloud, and AI.
     </p>
+  </section>
+
+  <section>
+    <h2>Writing &amp; Working Artifacts</h2>
+    <div class="grid">
+      <a class="card" href="https://abhimukta.github.io/itom/" target="_blank" rel="noopener">
+        <h3>The IT Platform as a Multi-Sided Network</h3>
+        <p>An operating philosophy for IT Service Management — treating IT platforms as multi-sided business platforms, orchestrated by the Service Owner.</p>
+        <span class="go">Read the essay &rarr;</span>
+      </a>
+      <a class="card" href="https://abhimukta.github.io/pki/" target="_blank" rel="noopener">
+        <h3>PKI Toolkit</h3>
+        <p>Free browser-based certificate tools — practical, compliance-minded utilities for working with certificates and CSRs.</p>
+        <span class="go">Open the toolkit &rarr;</span>
+      </a>
+      <a class="card" href="https://abhimukta.github.io/iam/" target="_blank" rel="noopener">
+        <h3>CMDB Schema — Executive Summary</h3>
+        <p>An executive-level view of CMDB schema design for IAM governance and service data integrity.</p>
+        <span class="go">View the summary &rarr;</span>
+      </a>
+    </div>
   </section>
 
   <section>
