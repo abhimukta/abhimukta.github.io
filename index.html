@@ -49,6 +49,15 @@
   .quote p + p{margin-top:12px;}
   .quote em{color:var(--navy-2);}
 
+  /* Q&A */
+  .qa-list{display:flex;flex-direction:column;gap:22px;margin-top:6px;}
+  .qa{background:#fff;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:22px 26px;box-shadow:0 1px 3px rgba(18,38,58,.05);}
+  .qa .q{font-family:Georgia,'Times New Roman',serif;color:var(--navy);font-weight:600;font-size:1.05rem;margin-bottom:10px;}
+  .qa .a{font-size:1rem;}
+  .qa .a + .a{margin-top:12px;}
+  .qa ul{margin:10px 0 0 20px;}
+  .qa li{margin-bottom:6px;font-size:1rem;}
+
   /* Journey */
   .journey{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px;font-size:.93rem;color:var(--muted);}
   .journey b{color:var(--navy);font-weight:600;}
@@ -136,18 +145,31 @@
 
   <section>
     <h2>How I Think</h2>
-    <div class="quote">
-      <p>
-        I experienced 9/11 while working at the World Bank. Since then, <em>resiliency has been part of
-        my design</em> — I design with failure in mind, because that is what makes systems stable. My
-        stance is a balance between reliability and validity: proven practice where it protects the
-        business, exploration where it creates value.
-      </p>
-      <p>
-        In a regulated industry, exploration doesn't mean breaking rules — it means recombining them
-        to create unique solutions. And the best solutions start with empathy: service blueprints,
-        listening, and human-centered design thinking, so we build what users actually need.
-      </p>
+    <div class="qa-list">
+      <div class="qa">
+        <p class="q">How would you describe your role within your organization? What are your key responsibilities?</p>
+        <p class="a">I lead the global Identity Platform with a mandate centered on operational risk reduction, regulatory compliance, and control-by-design architecture. Identity is one of the firm's highest-impact control domains, touching every human and machine entity across authentication, authorization, credential lifecycle, and privileged access. My focus is to simplify identity interactions while strengthening governance: every workflow is engineered to enforce RBAC, policy validation, and CMDB-linked controls at the point of initiation. This ensures that business and revenue-generating teams operate within a fully compliant identity perimeter, where non-compliant actions are technically impossible rather than procedurally discouraged.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Can you share an example of a significant IT transformation or change initiative you've led and the lessons you learned?</p>
+        <p class="a">In 2018, I played a key role in the firm's public cloud adoption by translating on-premises regulatory requirements into rigorously tested AWS IAM policy baselines. A primary challenge was enabling the IT workforce to develop the cloud operations capabilities required to accelerate adoption. I also modernized enterprise ITSM practices to generate meaningful performance data and applied Design Thinking to create artifacts that simplified cloud transformation requirements across peer, junior, and management stakeholder groups. These efforts contributed to a 96% performance improvement in the first year.</p>
+      </div>
+      <div class="qa">
+        <p class="q">How do you ensure that diversity, equity, and inclusion are not just initiatives but core principles embedded in the company's culture and technology teams?</p>
+        <p class="a">I view diversity, equity, and inclusion as core design principles rather than standalone initiatives. Because bias can influence how people interpret needs, access systems, and engage with technology, I approach every workflow with empathy and a focus on equitable outcomes.</p>
+        <p class="a">In complex IAM platform services, each interconnected workflow functions like a business capability with distinct users, risks, and success criteria. To support these differences, we design human-computer interfaces that reflect a broad range of user needs and operating contexts.</p>
+        <ul>
+          <li>Build empathy into workflow design and stakeholder engagement.</li>
+          <li>Reduce friction by making secure and compliant actions easier to perform.</li>
+          <li>Continuously refine interfaces through experimentation, feedback, and inclusive design practices.</li>
+        </ul>
+        <p class="a">This remains an ongoing journey: creating technology experiences that are secure, usable, and inclusive for every stakeholder group.</p>
+      </div>
+      <div class="qa">
+        <p class="q">Can you share some of the key challenges your team faces in aligning IT and business objectives with regulatory requirements, and how do you ensure that risk management is integrated into the company culture?</p>
+        <p class="a">With 25+ years in Access Management and Cryptography, I have seen how complex IAM becomes when regulatory requirements must be translated into enforceable, business-ready controls. My approach is to embed governance, risk rules, and compliance logic directly into IAM workflows, automation, and user interfaces so that non-compliant actions are prevented by design.</p>
+        <p class="a">This reduces operational friction, keeps employees focused on revenue-generating work, and strengthens the control environment by making compliant behavior the default outcome. The goal is a secure, intuitive, and empathy-driven experience where governance and usability reinforce each other.</p>
+      </div>
     </div>
   </section>
 
